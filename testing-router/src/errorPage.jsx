@@ -1,17 +1,10 @@
-import { useRouteError } from "react-router-dom";
-
+import { Link } from "react-router-dom"
 const errorPage = () => {
-
-    const errs = useRouteError();
-
-    console.log(errs.statusText, errs.error.message)
   return (
-    <div>
+    <div className="error">
         <h1>Sorry, unexcepted error has occured!</h1>
-        <p>
-            {errs.statusText}
-            {errs.error.message}
-        </p>
+
+        Go to home Page <Link to="/">Home</Link>
     </div>
   )
 }
