@@ -1,0 +1,14 @@
+.root{
+  color: red;
+  text-align: left;
+}
+.contact{
+  color: black;
+  text-align: right;
+}
+.footer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
